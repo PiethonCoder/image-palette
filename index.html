@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/PiethonCoder/clean.css/versions/clean@latest.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
+    <meta charset="UTF-8">
+    <title>Color Parse</title>
+</head>
+
+<body>
+    <main class="flex-column h100 w100">
+        <section id="bar" class="w100 h5 black3"></section>
+        <section class="w100 h95 flex">
+            <div id="images" class="h100 w15 white2 flex">
+				<input id="hidden-upload" type="file" style="visibility:hidden;" class="top w100">
+                <div class="top margin50-top flex" >
+                    <p>Images</p>
+                    <i class="fas fa-images margin10-left"></i>
+                </div>
+                <div id="upload" type="file" class="button-black @pop w40">upload image</div>
+            </div>
+
+            <div id="main-image" class="h100 w70 black flex">
+                <canvas id="canvas" class="z10" height="700" width="1000"></canvas>
+            </div>
+			
+			<div class="flex-column flex-left h100 w15">
+				<div class="w100 h20 flex">
+					<div class="w80 h30 margin30-top custom-select">
+						<select id="colorCount" >
+							<option>4</option>
+							<option>2</option>
+							<option>4</option>
+							<option>6</option>
+							<option>8</option>
+							<option>10</option>
+						</select>
+					</div>
+				</div>
+				<div id="colors" class="flex-column flex-left h80 w100 white2 !overflow">
+
+				</div>
+			</div>
+
+        </section>
+    </main>
+	
+	<script src="./scripts/scale.js"></script>
+    <script src="./scripts/index.js"></script>
+	<script src="./scripts/dropdown.js"></script>
+</body>
+
+</html>
